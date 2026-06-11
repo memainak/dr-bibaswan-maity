@@ -15,15 +15,16 @@ export const metadata: Metadata = {
     default: `${SITE.name} | Urologist & Renal Transplant Surgeon in Midnapore`,
     template: `%s | ${SITE.name}`,
   },
-  description: `${SITE.name} — ${SITE.titles}. Expert urological, andrological, and renal transplant care at ${SITE.shortName}, Midnapore, West Bengal. Call ${SITE.phoneDisplay} for appointments.`,
+  description: `${SITE.name} — ${SITE.titles}. ${SITE.tagline} at ${SITE.shortName}, Midnapore. Kidney stones, prostate, laparoscopy, oncology & more. Call ${SITE.phoneDisplay}.`,
   keywords: [
     "urologist Midnapore",
-    "andrologist West Bengal",
-    "renal transplant surgeon",
-    "kidney stone treatment",
+    "laparoscopy surgeon West Bengal",
+    "kidney stone laser surgery",
+    "uro-oncologist",
     "Dr Bibaswan Maity",
     "Urosolution clinic",
-    "urology doctor Midnapore",
+    "andrologist Midnapore",
+    "renal transplant surgeon",
   ],
   authors: [{ name: SITE.name }],
   creator: SITE.name,
@@ -33,6 +34,7 @@ export const metadata: Metadata = {
     title: `${SITE.name} | Consultant Urologist in Midnapore`,
     description: `Book an appointment with ${SITE.name} at ${SITE.shortName}. ${SITE.titles}.`,
     siteName: SITE.shortName,
+    images: [{ url: SITE.profileImage, alt: SITE.name }],
   },
   twitter: {
     card: "summary_large_image",
@@ -51,7 +53,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#2563eb",
+  themeColor: "#00B4D8",
 };
 
 export default function RootLayout({

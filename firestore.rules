@@ -1,0 +1,20 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /appointment_requests/{requestId} {
+      // Allow website visitors to create appointment requests only
+      allow create: if
+        request.resource.data.name is string
+        && request.resource.data.name.size() >= 2
+        && request.resource.data.name.size() <= 80
+        && request.resource.data.phone is string
+        && request.resource.data.phone.matches('^[6-9][0-9]{9}$')
+        && request.resource.data.source == 'website'
+        && request.resource.data.status == 'new';
+
+      // Doctor reads/updates from Firebase Console only
+      allow read, update, delete: if false;
+    }
+  }
+}

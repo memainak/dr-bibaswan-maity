@@ -38,6 +38,29 @@ Edit `lib/site-data.ts` for:
 
 Replace the Google Maps embed `iframe` `src` in `components/Location.tsx` with the embed URL from Google Maps → Share → Embed a map.
 
+### Doctor profile photo
+
+1. Save the photo as `public/images/dr-bibaswan-maity.jpg`
+2. In `lib/site-data.ts`, set `profileImage: "/images/dr-bibaswan-maity.jpg"`
+
+### YouTube videos
+
+In `lib/site-data.ts`:
+
+- Set `youtubeId` for each entry in `YOUTUBE_VIDEOS` (the ID from `youtube.com/watch?v=VIDEO_ID`)
+- Set `youtubeChannelUrl` to your channel link when ready
+
+### Social links
+
+- Facebook: `facebookUrl` in `lib/site-data.ts`
+- Developer credit: `developer` object in `lib/site-data.ts`
+
+### Appointment form (Firebase + WhatsApp)
+
+Patient bookings are saved to Firestore collection `appointment_requests` and open WhatsApp with the patient details.
+
+See **[FIREBASE_SETUP.md](./FIREBASE_SETUP.md)** for full setup on project [dr-bibaswan-maity](https://console.firebase.google.com/project/dr-bibaswan-maity/firestore).
+
 ## Tech stack
 
 - Next.js 15 (App Router)

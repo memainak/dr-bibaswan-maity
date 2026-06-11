@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" fill="none">
+  <rect width="400" height="480" rx="24" fill="#E6F9FD"/>
+  <circle cx="200" cy="160" r="72" fill="#00B4D8" opacity="0.25"/>
+  <circle cx="200" cy="150" r="56" fill="#0090AD"/>
+  <path d="M88 420c24-72 72-108 112-108s88 36 112 108" fill="#00B4D8" opacity="0.35"/>
+  <path d="M108 420c20-56 60-84 92-84s72 28 92 84" fill="#0090AD"/>
+  <rect x="120" y="320" width="160" height="12" rx="6" fill="#00B4D8" opacity="0.4"/>
+  <text x="200" y="455" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" fill="#006C82">Dr. Bibaswan Maity</text>
+</svg>

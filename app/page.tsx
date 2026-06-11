@@ -1,9 +1,13 @@
 import About from "@/components/About";
+import AppointmentForm from "@/components/AppointmentForm";
+import ClinicGallery from "@/components/ClinicGallery";
+import FloatingContactActions from "@/components/FloatingContactActions";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Location from "@/components/Location";
 import Navbar from "@/components/Navbar";
 import Services from "@/components/Services";
+import Videos from "@/components/Videos";
 
 export default function HomePage() {
   return (
@@ -11,11 +15,15 @@ export default function HomePage() {
       <Navbar />
       <main>
         <Hero />
-        <About />
         <Services />
+        <About />
+        <ClinicGallery />
+        <Videos />
+        <AppointmentForm />
         <Location />
       </main>
       <Footer />
+      <FloatingContactActions />
     </>
   );
 }

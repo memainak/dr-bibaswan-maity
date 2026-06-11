@@ -1,4 +1,6 @@
-import { Clock, MapPin, Phone } from "lucide-react";
+import CallButton from "@/components/CallButton";
+import WhatsAppButton from "@/components/WhatsAppButton";
+import { Clock, MapPin } from "lucide-react";
 import { SITE } from "@/lib/site-data";
 
 export default function Location() {
@@ -56,13 +58,16 @@ export default function Location() {
               </div>
             </div>
 
-            <a
-              href={`tel:${SITE.phone}`}
-              className="btn-primary w-full sm:w-auto"
-            >
-              <Phone className="h-4 w-4" aria-hidden />
-              Call Now: {SITE.phoneLocal}
-            </a>
+            <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <CallButton
+                label={`Call Now: ${SITE.phoneLocal}`}
+                className="w-full sm:w-auto"
+              />
+              <WhatsAppButton
+                label="WhatsApp Us"
+                className="w-full sm:w-auto"
+              />
+            </div>
 
             <a
               href={SITE.mapsUrl}
@@ -103,13 +108,8 @@ export default function Location() {
         </div>
 
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4 rounded-2xl border border-slate-200 bg-white px-6 py-5 text-sm text-slate-600 shadow-sm">
-          <a
-            href={`tel:${SITE.phone}`}
-            className="btn-primary"
-          >
-            <Phone className="h-4 w-4" aria-hidden />
-            {SITE.phoneDisplay}
-          </a>
+          <CallButton label={SITE.phoneDisplay} />
+          <WhatsAppButton label="WhatsApp" />
           <a
             href={SITE.mapsUrl}
             target="_blank"
