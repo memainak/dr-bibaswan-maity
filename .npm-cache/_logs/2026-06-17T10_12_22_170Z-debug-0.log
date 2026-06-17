@@ -1,0 +1,18 @@
+0 verbose cli /usr/local/bin/node /usr/local/lib/node_modules/npm/bin/npm-cli.js
+1 info using npm@11.8.0
+2 info using node@v24.13.1
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/adventure/Desktop/Dr Bibaswan Maity/bibswan maity new/.npmrc
+5 silly config load:file:/Users/adventure/.npmrc
+6 silly config load:file:/usr/local/etc/npmrc
+7 verbose title npm exec vercel inspect dr-bibaswan-maity-ki3hc4q7w-mainak-sinhas-projects.vercel.app
+8 verbose argv "exec" "--cache" "./.npm-cache" "--" "vercel" "inspect" "dr-bibaswan-maity-ki3hc4q7w-mainak-sinhas-projects.vercel.app"
+9 verbose logfile logs-max:10 dir:/Users/adventure/Desktop/Dr Bibaswan Maity/bibswan maity new/.npm-cache/_logs/2026-06-17T10_12_22_170Z-
+10 verbose logfile /Users/adventure/Desktop/Dr Bibaswan Maity/bibswan maity new/.npm-cache/_logs/2026-06-17T10_12_22_170Z-debug-0.log
+11 silly logfile done cleaning log files
+12 verbose cwd /Users/adventure/Desktop/Dr Bibaswan Maity/bibswan maity new
+13 verbose os Darwin 25.5.0
+14 verbose node v24.13.1
+15 verbose npm  v11.8.0
+16 verbose exit 0
+17 info ok

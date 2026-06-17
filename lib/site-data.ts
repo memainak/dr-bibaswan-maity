@@ -138,7 +138,7 @@ export const SERVICE_CATEGORIES = [
       "Hypospadias Repair",
       "Ureteric Re-implantation / Uretero-Neo-Cystostomy",
       "Urethroplasty",
-      "Laser/Optical urethrotomy (OIV)",
+      "Laser/Optical urethrotomy (OIU)",
       "Hydrocele Surgery",
       "Laproscopic Pyeloplasty",
     ],
@@ -201,8 +201,13 @@ export const SERVICE_CATEGORIES = [
     description: "Expert care for children with congenital and developmental urological conditions.",
     highlights: [
       "Circumcision & Hypospadias Repair",
+      "Posterior Urethral Valves (PUV)",
       "Bed Wetting Treatment",
       "Hypospadias",
+      "Undescended Testis",
+      "Posterior Uretral Valve",
+      "PUJ Obstruction",
+      "Pediatric Stone Disease",
     ],
   },
   {
