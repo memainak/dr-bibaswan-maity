@@ -80,8 +80,9 @@ export default function Footer() {
                 >
                   WhatsApp: {SITE.phoneLocal}
                 </a>
-                <a>Call(Emergency Only)- 9475891326</a>
+               
               </li>
+              <li> <a>Call(Emergency Only)- 9475891326</a></li>
               <li>
                 <a
                   href={SITE.mapsUrl}
