@@ -201,7 +201,7 @@ export const SERVICE_CATEGORIES = [
     description: "Expert care for children with congenital and developmental urological conditions.",
     highlights: [
       "Circumcision & Hypospadias Repair",
-      "Posterior Urethral Valves (PUV)",
+      "Posterior Urethral Valve (PUV)",
       "Bed Wetting Treatment",
       "Undescended Testis",
       "Posterior Uretral Valve",
