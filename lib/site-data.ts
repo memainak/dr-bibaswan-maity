@@ -203,7 +203,6 @@ export const SERVICE_CATEGORIES = [
       "Circumcision & Hypospadias Repair",
       "Posterior Urethral Valves (PUV)",
       "Bed Wetting Treatment",
-      "Hypospadias",
       "Undescended Testis",
       "Posterior Uretral Valve",
       "PUJ Obstruction",
