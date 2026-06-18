@@ -62,28 +62,30 @@ export default function AppointmentForm() {
 
       // Fallback: client Firestore when server credentials not set on Vercel
       if (res.status === 503 && isFirebaseClientConfigured()) {
-        await saveAppointmentRequestClient(payload);
+        try {
+          await saveAppointmentRequestClient(payload);
+        } catch (dbErr) {
+          console.error("Firestore backup failed:", dbErr);
+        }
         finishSuccess(buildAppointmentWhatsAppUrl(payload.name, payload.phone));
         return;
       }
 
       throw new Error(data.error ?? "Something went wrong. Please try again.");
     } catch (err) {
-      const errMsg =
-        err instanceof Error ? err.message : "Could not submit. Please call the clinic.";
+      console.error("Appointment submission error:", err);
 
-      if (isFirebaseClientConfigured()) {
-        try {
+      // Fallback: try client-side backup if config exists
+      try {
+        if (isFirebaseClientConfigured()) {
           await saveAppointmentRequestClient(payload);
-          finishSuccess(buildAppointmentWhatsAppUrl(payload.name, payload.phone));
-          return;
-        } catch {
-          // fall through to error
         }
+      } catch (dbErr) {
+        console.error("Firestore fallback backup failed:", dbErr);
       }
 
-      setStatus("error");
-      setMessage(errMsg);
+      // Always allow the user to redirect to WhatsApp so the booking is not blocked
+      finishSuccess(buildAppointmentWhatsAppUrl(payload.name, payload.phone));
     }
   }
 
