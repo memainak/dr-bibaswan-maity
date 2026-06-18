@@ -80,7 +80,7 @@ export default function Hero() {
               </li>
               <li className="flex gap-2">
                 <span className="font-semibold text-white">Location:</span>
-                Rabindranagar,Opposite Midnapore(Dutta) Nursing Home, Midnapore, West Bengal
+                Rabindranagar[Opp to Midnapore(Dutta) Nursing Home], Midnapore, West Bengal
               </li>
               <li className="flex gap-2">
                 <span className="font-semibold text-white">Phone:</span>
