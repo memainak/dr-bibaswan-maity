@@ -79,6 +79,7 @@ export default function Footer() {
                   className="inline-flex items-center gap-2 text-[#4ade80] transition hover:text-[#86efac]"
                 >
                   WhatsApp: {SITE.phoneLocal}
+                  Call(Emergency Only)- 9475891326
                 </a>
               </li>
               <li>
