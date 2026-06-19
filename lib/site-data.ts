@@ -16,7 +16,7 @@ export const SITE = {
   whatsappUrl: `https://wa.me/919239528475?text=${encodeURIComponent(
     "Hello Dr. Bibaswan Maity, I would like to book an appointment at Urosolution."
   )}`,
-  facebookUrl: "https://www.facebook.com/bibaswan.maity",
+  facebookUrl: "https://www.facebook.com/profile.php?id=61576066049122",
   youtubeChannelUrl: "https://youtube.com/@dr.bibaswanmaity?si=bfRrJues-RkH5wVW",
   developer: {
     name: "Ad Venture Advertising",
@@ -41,11 +41,11 @@ export const SITE = {
     },
     {
       degree: "MS (General Surgery)",
-      detail: "IPGMER SSKM Hospital Kolkata, West Bengal",
+      detail: "IPGMER & SSKM Hospital Kolkata, West Bengal",
     },
     {
       degree: "DrNB (Urology)",
-      detail: "National Board of Examination",
+      detail: "National Board of Examination, New Delhi",
     },
   ],
   currentAttachment: "Visiting Consultant at Shyama Prasad Mukherjee Super Speciality Hospital, IIT, Kharagpur, West Bengal",
@@ -204,7 +204,7 @@ export const SERVICE_CATEGORIES = [
       "Posterior Urethral Valve (PUV)",
       "Bed Wetting Treatment",
       "Undescended Testis",
-      "Posterior Uretral Valve",
+      "Posterior Urethral Valve",
       "PUJ Obstruction",
       "Pediatric Stone Disease",
     ],
