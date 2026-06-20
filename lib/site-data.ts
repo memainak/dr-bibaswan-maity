@@ -45,7 +45,7 @@ export const SITE = {
     },
     {
       degree: "DrNB (Urology)",
-      detail: "National Board of Examination, New Delhi",
+      detail: "National Board of Examinations, New Delhi",
     },
   ],
   currentAttachment: "Visiting Consultant at Shyama Prasad Mukherjee Super Speciality Hospital, IIT, Kharagpur, West Bengal",
