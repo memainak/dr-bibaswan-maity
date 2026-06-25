@@ -87,6 +87,7 @@ export const NAV_LINKS = [
   { href: "#services", label: "Services" },
   { href: "#about", label: "About" },
   { href: "#videos", label: "Videos" },
+  { href: "#testimonials", label: "Reviews" },
   { href: "#appointment", label: "Book" },
   { href: "#location", label: "Location" },
   { href: "#contact", label: "Contact" },
@@ -225,3 +226,30 @@ export const SERVICE_CATEGORIES = [
     ],
   },
 ] as const;
+
+export const GOOGLE_REVIEWS_URL = "https://www.google.com/search?sca_esv=eb7e31ac54169e18&rlz=1C5BAPC_enIN1168IN1169&sxsrf=APpeQnuRsNYR5vSuqKr1C5LAIWPZYozNAA:1782370106446&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_wtG13xjF4-CU8zv1d7AoyyQEg4TVaNzVwYAIixsoByxw6fozItTC6DVNlsGy7R55u4W0zfhzL65YD2ez9zwkvTDm5VWwzoX3jpH8iHjoj5x0fwukQ%3D%3D&q=Dr.+Bibaswan+Maity+Reviews&sa=X&ved=2ahUKEwiI4LWI5qGVAxXLa2wGHW74EWMQ0bkNegQIJxAF&biw=1374&bih=756&dpr=2";
+
+export const TESTIMONIALS = [
+  {
+    author: "Atanu Kaila",
+    info: "1 review",
+    time: "a month ago",
+    rating: 5,
+    text: "I am deeply grateful to Dr. Bibaswan Maity for successfully treating my right-side 8.6 mm kidney stone through RIRS with DJ stenting. His exceptional skill, professionalism, and compassionate care made the entire journey smooth and stress-free. He is highly knowledgeable, very friendly, and truly understanding, always taking time to listen and explain everything clearly. The hospital staff were also very helpful. Now I am feeling much better. Overall, my experience was outstanding. Highly recommended!",
+  },
+  {
+    author: "Bibek Mahapatra",
+    info: "1 review · 1 photo",
+    time: "2 weeks ago",
+    rating: 5,
+    text: "My mom suffered from some problems. We consult with doctor bibaswan Maity sir an advice us what we can do and explain everything . And we glad my mom was stable now . He was very good surgeon. Thanks Dr. bibaswan sir.",
+  },
+  {
+    author: "Sultana Bibi",
+    info: "1 review",
+    time: "4 months ago",
+    rating: 5,
+    text: "My wife suffering from pain for kidney stone we visited many doctors but we are not satisfied. Then we visited dr. Bibaswan maity and satisfied by his behaviour and done stone surgery \"RIRS\" Laser surgery from him . He explained us everything and surgery done very well.",
+  },
+] as const;
+
