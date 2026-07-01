@@ -10,7 +10,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://drbibaswanmaity.in"),
+  metadataBase: new URL("https://drbibaswanmaity.com"),
   title: {
     default: `${SITE.name} | Urologist & Renal Transplant Surgeon in Midnapore`,
     template: `%s | ${SITE.name}`,
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     locale: "en_IN",
     title: `${SITE.name} | Consultant Urologist in Midnapore`,
     description: `Book an appointment with ${SITE.name} at ${SITE.shortName}. ${SITE.titles}.`,
-    siteName: SITE.shortName,
+    siteName: SITE.name,
     images: [{ url: SITE.profileImage, alt: SITE.name }],
   },
   twitter: {
@@ -48,6 +48,13 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  icons: {
+    icon: [
+      { url: "/icon.png", type: "image/png" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/icon.png",
+  },
 };
 
 export const viewport: Viewport = {
@@ -61,9 +68,43 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const schemas = [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": SITE.name,
+      "url": "https://drbibaswanmaity.com",
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      "name": SITE.name,
+      "alternateName": SITE.shortName,
+      "url": "https://drbibaswanmaity.com",
+      "logo": "https://drbibaswanmaity.com/icon.png",
+      "image": `https://drbibaswanmaity.com${SITE.profileImage}`,
+      "telephone": SITE.phone,
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": SITE.address.line1,
+        "addressLocality": "Midnapore",
+        "addressRegion": "West Bengal",
+        "postalCode": SITE.address.pin,
+        "addressCountry": "IN"
+      }
+    }
+  ];
+
   return (
     <html lang="en" className={inter.variable}>
-      <body className={`${inter.className} min-h-screen`}>{children}</body>
+      <body className={`${inter.className} min-h-screen`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas) }}
+        />
+        {children}
+      </body>
     </html>
   );
 }
+
